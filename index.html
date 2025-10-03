@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taha Fadhil Abdullah - Backend Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Warm Neutrals -->
+    <!-- Application Structure Plan: A single-page, vertical-scrolling layout was chosen to present the CV in a modern, digestible format. The structure flows from a high-level introduction (Role) to specific capabilities (Skills) and concludes with the value proposition (Contribution). This linear narrative is intuitive for a personal profile and transforms the static text into an engaging digital presence. -->
+    <!-- Visualization & Content Choices: Role -> Inform -> Text Block -> N/A -> Clear narrative intro. | Skills -> Organize/Inform -> Interactive Cards (Grid Layout) -> Hover effects for feedback -> More visually engaging and scannable than a simple list -> HTML/Tailwind. | Contribution -> Inform -> Emphasized Text Block -> N/A -> Strong concluding statement. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .skill-card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .dark .skill-card:hover {
+             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-neutral-50 text-neutral-800 dark:bg-gray-900 dark:text-neutral-200">
+
+    <div class="relative container mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <header class="text-center py-16 md:py-24">
+            <h1 class="text-4xl md:text-6xl font-bold text-neutral-900 dark:text-white tracking-tight">Taha Fadhil Abdullah</h1>
+            <p class="mt-4 text-lg md:text-xl text-amber-700 font-medium">Backend Developer</p>
+            <p class="mt-2 text-md md:text-lg text-neutral-600 dark:text-neutral-400">Participant at NASA Space Apps Hackathon</p>
+        </header>
+
+        <main class="max-w-4xl mx-auto">
+
+            <section id="role" class="mb-16">
+                 <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm border border-neutral-200 dark:border-gray-700">
+                    <h2 class="text-3xl font-bold text-neutral-900 dark:text-white mb-4">Role</h2>
+                    <p class="text-neutral-700 dark:text-neutral-300 leading-relaxed">
+                        As a passionate and dedicated backend developer, I am eager to contribute my skills to build innovative solutions for the challenges presented at the NASA Space Apps Hackathon. As a second-year Computer Science student at the University of Kufa, I bring a fresh perspective and a strong foundational knowledge of software development principles to the team.
+                    </p>
+                </div>
+            </section>
+
+            <section id="skills" class="mb-16">
+                <h2 class="text-3xl font-bold text-center text-neutral-900 dark:text-white mb-8">Core Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <div class="skill-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-neutral-200 dark:border-gray-700">
+                        <h3 class="font-bold text-lg text-neutral-900 dark:text-white mb-2">Backend & Server-Side Development</h3>
+                        <p class="text-neutral-600 dark:text-neutral-300">Python, Java, C++</p>
+                    </div>
+
+                    <div class="skill-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-neutral-200 dark:border-gray-700">
+                        <h3 class="font-bold text-lg text-neutral-900 dark:text-white mb-2">API Design & Development</h3>
+                        <p class="text-neutral-600 dark:text-neutral-300">Foundational knowledge in creating and integrating APIs for seamless data communication.</p>
+                    </div>
+
+                    <div class="skill-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-neutral-200 dark:border-gray-700">
+                        <h3 class="font-bold text-lg text-neutral-900 dark:text-white mb-2">Core CS Principles</h3>
+                        <p class="text-neutral-600 dark:text-neutral-300">Strong understanding of Data Structures, Algorithms, and Object-Oriented Programming.</p>
+                    </div>
+
+                    <div class="skill-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-neutral-200 dark:border-gray-700">
+                        <h3 class="font-bold text-lg text-neutral-900 dark:text-white mb-2">Web Technologies</h3>
+                        <p class="text-neutral-600 dark:text-neutral-300">Proficiency in HTML and CSS for effective collaboration with frontend teams.</p>
+                    </div>
+
+                    <div class="skill-card bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-neutral-200 dark:border-gray-700">
+                        <h3 class="font-bold text-lg text-neutral-900 dark:text-white mb-2">Problem-Solving & Logic</h3>
+                        <p class="text-neutral-600 dark:text-neutral-300">Applying analytical skills honed through computer science coursework to tackle complex technical challenges.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="contribution" class="mb-16">
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm border border-neutral-200 dark:border-gray-700">
+                    <h2 class="text-3xl font-bold text-neutral-900 dark:text-white mb-4">Contribution</h2>
+                    <p class="text-neutral-700 dark:text-neutral-300 leading-relaxed">
+                        Architects and implements the core server-side logic that powers the application, ensuring performance, scalability, and reliability. Develops and manages APIs that enable seamless data exchange between the server and client-side interfaces. Leverages a strong foundation in C++, Java, and Python to translate complex requirements into efficient and maintainable code. Collaborates closely with frontend developers to integrate the user interface with backend systems, providing the foundational stability and functionality necessary to deliver a complete and impactful solution.
+                    </p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="text-center py-8 mt-8 border-t border-neutral-200 dark:border-gray-700">
+            <p class="text-neutral-500 dark:text-neutral-400">Designed for NASA Space Apps Hackathon</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
